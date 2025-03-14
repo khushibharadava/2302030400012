@@ -1,0 +1,1071 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborative Art Gallery</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url(BG1.png);
+            font-family: Arial, sans-serif;
+            overflow-y: hidden;
+        }
+        .navbar {
+            background-color:rgb(91, 87, 87);
+        }
+        .heading {
+            background-color: rgb(212, 212, 212);
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.75rem;
+            color:rgb(78, 70, 71);
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+        .navbar-nav .nav-link.active {
+            color: #63b3ed !important;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero button {
+            font-size: larger;
+            font-weight: 700;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            width: 100px;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+        .quote {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            border-radius: 40px;
+            text-align: center;
+            max-width: 900px;
+            margin-top: 20px;
+        }
+        .quote p {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .quote .author {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p class="heading text-center fs-1 mb-0 fw-bolder">Collaborative Art Gallary</p>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto fw-bolder">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Collaborate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="position-relative">
+            <button>Get Started</button>
+        </div>
+        <div class="quote mt-4">
+            <p>“The Whole world is an art gallery When you’re mindful. There are Beautiful things everywhere and they’re free”</p>
+            <p class="author">---Charles Tart---</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborative Art Gallery</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url(BG1.png);
+            font-family: Arial, sans-serif;
+            overflow-y: hidden;
+        }
+
+        .navbar {
+            background-color: rgb(91, 87, 87);
+        }
+
+        .heading {
+            background-color: rgb(212, 212, 212);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.75rem;
+            color: rgb(78, 70, 71);
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #63b3ed !important;
+        }
+
+        .form-container {
+            background-color: rgba(119, 114, 114, 0.4);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            margin: 1rem;
+        }
+
+        .form-container h2 {
+            color: #080c54;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .form-container label {
+            color: white;
+        }
+
+        .form-container .btn {
+            background-color: black;
+            color: white;
+        }
+
+        .form-container .btn:hover {
+            background-color: #1a202c;
+        }
+
+        .form-container a {
+            color: #4c51bf;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="heading text-center fs-1 mb-0 fw-bolder">Collaborative Art Gallary</p>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto fw-bolder">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Collaborate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="d-flex flex-column flex-md-row justify-content-center align-items-center bg-gray-300 p-4">
+        <div class="form-container col-12 col-md-4">
+            <h2>Register</h2>
+            <form>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm-password" name="confirm-password">
+                </div>
+                <button type="submit" class="btn btn-block">Register</button>
+            </form>
+        </div>
+        <div class="form-container col-12 col-md-4">
+            <h2>Login</h2>
+            <form>
+                <div class="form-group">
+                    <label for="login-username">Username</label>
+                    <input type="text" class="form-control" id="login-username" name="login-username">
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" class="form-control" id="login-password" name="login-password">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="remember-me" name="remember-me">
+                    <label class="form-check-label" for="remember-me">Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-block">Login</button>
+                <div class="mt-4">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="mt-4">
+                    Don't have an account? <a href="#">Register</a>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborative Art Gallery</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url(BG1.png);
+            font-family: Arial, sans-serif;
+            overflow-y: hidden;
+        }
+
+        .navbar {
+            background-color: rgb(91, 87, 87);
+        }
+
+        .heading {
+            background-color: rgb(212, 212, 212);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.75rem;
+            color: rgb(78, 70, 71);
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #63b3ed !important;
+        }
+
+        .main-content {
+            /* background-color: #d1d5db; */
+            padding: 2rem 0;
+        }
+
+        .main-content h2 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background-color: #f8f9fa6f;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            font-size: 2rem;
+            color: #4b0082;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            color: black;
+        }
+
+        .image-container img {
+            border-radius: 0.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <p class="heading text-center fs-1 mb-0 fw-bolder">Collaborative Art Gallary</p>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto fw-bolder">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Collaborate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main-content">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-5 mb-4">
+                    <div class="card">
+                        <h3>About Us</h3>
+                        <p>"At Collaborative Art Gallery, we bring together artists and art enthusiasts to create a
+                            collaborative space where creativity knows no bounds. Our gallery fosters a dynamic
+                            environment where diverse artistic expressions, from emerging to established artists, are
+                            celebrated. Through exhibitions, workshops, and community events, we aim to inspire
+                            connection and spark conversation, offering a platform for art to thrive and engage with a
+                            wider audience. Join us in exploring innovative, thought-provoking art that challenges,
+                            inspires, and unites."</p>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-4 ">
+                    <div class="card">
+                        <h3>Our vision</h3>
+                        <p>"Our vision at Collaborative Art Gallery is to cultivate a vibrant, inclusive space where
+                            creativity and collaboration intersect, empowering artists and communities to explore new
+                            perspectives and push the boundaries of artistic expression. We aim to foster a supportive
+                            environment that celebrates diversity, inspires innovation, and connects people through the
+                            transformative power of art. By nurturing creative dialogues and offering a platform for
+                            both emerging and established artists, we strive to contribute to a thriving cultural
+                            landscape that encourages growth, reflection, and shared experience."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborative Art Gallery</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url(BG1.png);
+            font-family: Arial, sans-serif;
+            overflow-y: hidden;
+        }
+
+        .navbar {
+            background-color: rgb(91, 87, 87);
+        }
+
+        .heading {
+            background-color: rgb(212, 212, 212);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.75rem;
+            color: rgb(78, 70, 71);
+        }
+
+        .text{
+            background-color: rgba(129, 118, 118, 0.408);
+            font-size: 26px;
+            font-weight: 600;
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #63b3ed !important;
+        }
+
+        .text-purple {
+            color: #4100d9;
+        }
+
+        .text-purple:hover {
+            color: #805ad5;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="heading text-center fs-1 mb-0 fw-bolder">Collaborative Art Gallary</p>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto fw-bolder">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Collaborate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class=" p-4">
+        <section class="text p-4 rounded-lg shadow-lg mb-4">
+            <h2 class="h4 text-purple mb-3">Our Mission</h2>
+            <p>Our mission is to provide a platform for emerging and established artists to showcase their work,
+                experiment with new ideas, and engage with a wider audience. Through exhibitions, workshops, and events,
+                we aim to create an inclusive space that inspires artistic innovation and cultural dialogue.</p>
+        </section>
+        <section class="text p-4 rounded-lg shadow-lg mb-4">
+            <h2 class="h4 text-purple mb-3">What We Offer</h2>
+            <ul class="list-unstyled">
+                <li class="mb-2">• Rotating Exhibitions – Showcasing contemporary, experimental, and traditional art
+                    from local and international artists.</li>
+                <li class="mb-2">• Art Workshops & Talks – Engaging sessions with artists, curators, and experts to
+                    inspire creativity and learning.</li>
+                <li class="mb-2">• Collaborative Projects – Encouraging cross-disciplinary collaborations between
+                    artists, musicians, writers, and performers.</li>
+                <li class="mb-2">• Community Events – Open-mic nights, live painting sessions, and art appreciation
+                    events to connect with the community.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborative Art Gallery</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url(BG1.png);
+            font-family: Arial, sans-serif;
+            overflow-y: hidden;
+        }
+
+        .navbar {
+            background-color: rgb(91, 87, 87);
+        }
+
+        .heading {
+            background-color: rgb(212, 212, 212);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.75rem;
+            color: rgb(78, 70, 71);
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #63b3ed !important;
+        }
+
+        .col{
+            display: flex;
+            margin: 55px 25px 25px 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="heading text-center fs-1 mb-0 fw-bolder">Collaborative Art Gallary</p>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto fw-bolder">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Collaborate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container text-center">
+            <div class="row row-cols-5">
+                <div class="col"><img src="image1.png" alt="" height="280px" width="230px"></div>
+                <div class="col"><img src="image2.png" alt="" height="280px" width="230px"></div>
+                <div class="col"><img src="image3.png" alt="" height="280px" width="230px"></div>
+                <div class="col"><img src="image4.png" alt="" height="280px" width="230px"></div>
+                <div class="col"><img src="image5.png" alt="" height="280px" width="230px"></div>
+                <div class="col"><img src="image6.png" alt="" height="280px" width="230px"></div>
+                <div class="col"><img src="image7.png" alt="" height="280px" width="230px"></div>
+                <div class="col"><img src="image8.png" alt="" height="280px" width="230px"></div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborative Art Gallery</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url(BG1.png);
+            font-family: Arial, sans-serif;
+            overflow-y: hidden;
+        }
+
+        .navbar {
+            background-color: rgb(91, 87, 87);
+        }
+
+        .heading {
+            background-color: rgb(212, 212, 212);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.75rem;
+            color: rgb(78, 70, 71);
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #63b3ed !important;
+        }
+
+        .main-content {
+            /* background-color: #2f4f4f; */
+            padding: 50px 0;
+            position: relative;
+        }
+        .main-content .painting {
+            width: 600px;
+            height: 400px;
+            object-fit: cover;
+            border: 4px solid #d3d3d3;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .info-box {
+            position: relative;
+            padding: 20px;
+            text-align: center;
+            color: #000;
+        }
+        .info-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: #d3d3d3;
+            opacity: 0.5;
+        }
+        .info-box h2 {
+            font-size: 2.5rem;
+            z-index: 1;
+            position: relative;
+        }
+        .info-box p {
+            font-weight: 700;
+            font-size: 1.25rem;
+            z-index: 1;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="heading text-center fs-1 mb-0 fw-bolder">Collaborative Art Gallary</p>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto fw-bolder">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Collaborate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main-content">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-6 mb-4">
+                    <div class="info-box">
+                        <h2>400+</h2>
+                        <p>Exhibition space Rental</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="info-box">
+                        <h2>350+</h2>
+                        <p>Art Workshops and Events</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="info-box">
+                        <h2>890+</h2>
+                        <p>Art Consultation services</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="info-box">
+                        <h2>296+</h2>
+                        <p>Art Networking Opportunities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborative Art Gallery</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url(BG1.png);
+            font-family: Arial, sans-serif;
+            overflow-y: hidden;
+        }
+
+        .navbar {
+            background-color: rgb(91, 87, 87);
+        }
+
+        .heading {
+            background-color: rgb(212, 212, 212);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.75rem;
+            color: rgb(78, 70, 71);
+        }
+
+        .text {
+            background-color: rgba(129, 118, 118, 0.408);
+            font-size: 26px;
+            font-weight: 600;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #63b3ed !important;
+        }
+
+        .content-section {
+            background-color: #f7fafc82;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section h2 {
+            color: #6b46c1;
+        }
+
+        .content-section h3 {
+            color: #6b46c1;
+        }
+
+        .content-section p {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="heading text-center fs-1 mb-0 fw-bolder">Collaborative Art Gallary</p>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto fw-bolder">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Collaborate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container py-3">
+        <section class="content-section">
+            <h2 class="h4 font-weight-bold">Our Management Team</h2>
+            <p>At Collaborative art gallery, our leadership team is dedicated to fostering a vibrant, inclusive space
+                for artists and art enthusiasts. With expertise in curation, operations, and marketing, we work to bring
+                compelling exhibitions, engaging events, and meaningful artistic collaborations to life.</p>
+            <div>
+                <h3 class="h5 font-weight-bold">1. Isabella Hart – Founder & Director</h3>
+                <p>A passionate advocate for contemporary art, Isabella founded Aurora Art Collective in 2018 with the
+                    vision of creating a space where artists could collaborate and showcase their work. With over 15
+                    years of experience in arts management, she has curated exhibitions in London, New York, and Tokyo.
+                    Under her leadership, the gallery has grown into a thriving hub for creativity.</p>
+            </div>
+            <div>
+                <h3 class="h5 font-weight-bold">2. Marco Ferrara – Head Curator</h3>
+                <p>Marco is an award-winning curator specializing in modern and experimental art. He has worked with
+                    leading galleries and biennales across Europe. His keen eye for emerging talent and innovative
+                    exhibitions helps shape the artistic vision of Aurora Art Collective.</p>
+            </div>
+            <div>
+                <h3 class="h5 font-weight-bold">3. Sophia Nguyen – Operations & Events Manager</h3>
+                <p>With a background in event planning and cultural programming, Sophia ensures that the gallery runs
+                    smoothly. From coordinating artist residencies to organizing large-scale art festivals, she plays a
+                    crucial role in delivering impactful exhibitions and engaging community events.</p>
+            </div>
+            <div>
+                <h3 class="h5 font-weight-bold">4. Daniel Cohen – Marketing & Community Engagement</h3>
+                <p>Daniel leads the gallery’s marketing efforts, building strong relationships with artists, collectors,
+                    and media outlets. Through social media campaigns, press outreach, and strategic partnerships, he
+                    ensures that Aurora Art Collective remains a key player in the contemporary art scene.</p>
+            </div>
+            <div>
+                <h3 class="h5 font-weight-bold">5. Aria Patel – Artist Liaison & Gallery Coordinator</h3>
+                <p>Aria works closely with artists, handling exhibition logistics, residency programs, and
+                    installations. With a background in fine arts and arts administration, she ensures that every artist
+                    at Aurora Art Collective receives the support they need to bring their creative vision to life.</p>
+            </div>
+            <div>
+                <h3 class="h5 font-weight-bold">Join Our Team</h3>
+                <p>We’re always looking for passionate individuals to join our creative community. Whether you’re an
+                    aspiring curator, event planner, or marketing specialist, we’d love to hear from you. Contact us at
+                    [Email] to learn more about career and volunteer opportunities.</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborative Art Gallery</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url(BG1.png);
+            font-family: Arial, sans-serif;
+            overflow-y: hidden;
+        }
+
+        .navbar {
+            background-color: rgb(91, 87, 87);
+        }
+
+        .heading {
+            background-color: rgb(212, 212, 212);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.75rem;
+            color: rgb(78, 70, 71);
+        }
+
+        .text {
+            background-color: rgba(129, 118, 118, 0.408);
+            font-size: 26px;
+            font-weight: 600;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #63b3ed !important;
+        }
+
+        .main-content {
+            color: #f7fafc;
+        }
+
+        .contact-section,
+        .form-section {
+            background-color: #e2e8f082;
+            color: #2d3748;
+        }
+
+        .contact-section h2,
+        .form-section h2 {
+            font-size: 2rem;
+        }
+
+        .contact-section img {
+            margin-top: 1rem;
+        }
+
+        .form-section button {
+            background-color: #6b46c1;
+            color: #f7fafc;
+        }
+
+        .form-section button:hover {
+            background-color: #553c9a;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="heading text-center fs-1 mb-0 fw-bolder">Collaborative Art Gallary</p>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto fw-bolder">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Collaborate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main-content d-flex flex-column flex-md-row justify-content-center align-items-start p-4">
+        <section class="contact-section p-4 rounded-lg shadow-lg w-100 mb-4 mb-md-0 mr-md-4">
+            <h2>Contact Us</h2>
+            <p>Thank you for visiting our Collaborative Art Gallery! Whether you’re an artist, art lover, or looking to
+                learn more, we’d love to connect with you.</p>
+            <p>Email: info@collabartgallery.com</p>
+            <p>Phone: +1 (555) 987-6543</p>
+            <p>Address:</p>
+            <p>Collaborative Art Gallery</p>
+            <p>456 Creative Street, Suite 200</p>
+            <p>Artown, CA 12345</p>
+            <p>For artist submissions, exhibition inquiries, or collaborations:</p>
+            <p>Artist Submissions: submissions@collabartgallery.com</p>
+            <p>Exhibition Inquiries: exhibitions@collabartgallery.com</p>
+            <p>Join our vibrant community and follow us on social media for the latest exhibits and events:</p>
+            <ul>
+                <li>Instagram: @CollabArtGallery</li>
+                <li>Facebook: Collaborative Art Gallery</li>
+                <li>Twitter: @CollabArtGallery</li>
+            </ul>
+            <p>We’re excited to hear from you and explore new creative possibilities together!</p>
+        </section>
+        <section class="form-section p-4 rounded-lg shadow-lg w-100">
+            <h2>Contact Form</h2>
+            <form>
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" class="form-control" id="fullName">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Comment or message</label>
+                    <textarea class="form-control" id="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
